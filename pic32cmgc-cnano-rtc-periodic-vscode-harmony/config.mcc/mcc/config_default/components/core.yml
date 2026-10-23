@@ -1,0 +1,666 @@
+configVersion: 1.0.0
+componentName: core
+coreVersion: 5.9.1
+device: PIC32CM5112GC00048
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: core
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    NVIC_12_0_ENABLE:
+      attributes:
+        id: NVIC_12_0_ENABLE
+        label: Enable RTC_TAMPER Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_12_0_HANDLER:
+      attributes:
+        id: NVIC_12_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_12_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_12_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_13_0_ENABLE:
+      attributes:
+        id: NVIC_13_0_ENABLE
+        label: Enable RTC_OVF Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_13_0_HANDLER:
+      attributes:
+        id: NVIC_13_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_13_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_13_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_14_0_ENABLE:
+      attributes:
+        id: NVIC_14_0_ENABLE
+        label: Enable RTC_PER0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_14_0_HANDLER:
+      attributes:
+        id: NVIC_14_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_14_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_14_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_15_0_ENABLE:
+      attributes:
+        id: NVIC_15_0_ENABLE
+        label: Enable RTC_CMP0 Interrupt
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_15_0_HANDLER:
+      attributes:
+        id: NVIC_15_0_HANDLER
+        label: Handler
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_15_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_15_0_HANDLER_LOCK
+        label: Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_CMP0_INTERRUPT_ENABLE:
+      attributes:
+        id: RTC_CMP0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_CMP0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: RTC_CMP0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_CMP0_INTERRUPT_HANDLER:
+      attributes:
+        id: RTC_CMP0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    RTC_CMP0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: RTC_CMP0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_OVF_INTERRUPT_ENABLE:
+      attributes:
+        id: RTC_OVF_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_OVF_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: RTC_OVF_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_OVF_INTERRUPT_HANDLER:
+      attributes:
+        id: RTC_OVF_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    RTC_OVF_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: RTC_OVF_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_PER0_INTERRUPT_ENABLE:
+      attributes:
+        id: RTC_PER0_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_PER0_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: RTC_PER0_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_PER0_INTERRUPT_HANDLER:
+      attributes:
+        id: RTC_PER0_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    RTC_PER0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: RTC_PER0_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_TAMPER_INTERRUPT_ENABLE:
+      attributes:
+        id: RTC_TAMPER_INTERRUPT_ENABLE
+        label: Vector Peripheral Enable
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_TAMPER_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: RTC_TAMPER_INTERRUPT_ENABLE_UPDATE
+        label: NVIC Peripheral Enable/Disable Update
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    RTC_TAMPER_INTERRUPT_HANDLER:
+      attributes:
+        id: RTC_TAMPER_INTERRUPT_HANDLER
+        label: Vector Peripheral Handler
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: RTC_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    RTC_TAMPER_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: RTC_TAMPER_INTERRUPT_HANDLER_LOCK
+        label: Vector Peripheral Handler Lock
+      children:
+      - children:
+        - attributes:
+            id: rtc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_44_MODE:
+      attributes:
+        id: PIN_44_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_44_FUNCTION_TYPE:
+      attributes:
+        id: PIN_44_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG7:
+      attributes:
+        id: PORT_GROUP_3_PINCFG7
+        label: PORT GROUP D PINCFG7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PIN_7_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_7_USED
+        label: PORT_GROUP_3_PIN_7_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_44_INEN:
+      attributes:
+        id: PIN_44_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_DIR:
+      attributes:
+        id: PORT_GROUP_3_DIR
+        label: Port Pin Direction
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x80'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_44_DIR:
+      attributes:
+        id: PIN_44_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_PMUX3:
+      attributes:
+        id: PORT_GROUP_3_PMUX3
+        label: PORT GROUP D PMUX3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_7:
+      attributes:
+        id: PORT_GROUP_3_PAD_7
+        label: PORT_GROUP_3_PAD_7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD07
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_44_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_44_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_44_FUNCTION_NAME:
+      attributes:
+        id: PIN_44_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: LED0
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_OUT:
+      attributes:
+        id: PORT_GROUP_3_OUT
+        label: Port Pin Output Value
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x80'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_44_LAT:
+      attributes:
+        id: PIN_44_LAT
+        label: Initial Latch Value
+      children:
+      - children:
+        - attributes:
+            value: High
+          type: User
+        type: Values
+      type: String
+    PIN_28_MODE:
+      attributes:
+        id: PIN_28_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_28_FUNCTION_TYPE:
+      attributes:
+        id: PIN_28_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG3:
+      attributes:
+        id: PORT_GROUP_2_PINCFG3
+        label: PORT GROUP C PINCFG3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_3_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_3_USED
+        label: PORT_GROUP_2_PIN_3_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_28_INEN:
+      attributes:
+        id: PIN_28_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_DIR:
+      attributes:
+        id: PORT_GROUP_2_DIR
+        label: Port Pin Direction
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x8'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_28_DIR:
+      attributes:
+        id: PIN_28_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PMUX1:
+      attributes:
+        id: PORT_GROUP_2_PMUX1
+        label: PORT GROUP C PMUX1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_3:
+      attributes:
+        id: PORT_GROUP_2_PAD_3
+        label: PORT_GROUP_2_PAD_3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC03
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_28_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_28_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_28_FUNCTION_NAME:
+      attributes:
+        id: PIN_28_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: DEBUG
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_OUT:
+      attributes:
+        id: PORT_GROUP_2_OUT
+        label: Port Pin Output Value
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x8'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_28_LAT:
+      attributes:
+        id: PIN_28_LAT
+        label: Initial Latch Value
+      children:
+      - children:
+        - attributes:
+            value: High
+          type: User
+        type: Values
+      type: String
+  userData:
+    children:
+    - attributes:
+        canvasHeight: '0'
+        canvasWidth: '0'
+      type: GraphSettings
+    - children:
+      - attributes:
+          id: profile0
+          name: Main
+        type: Profile
+      type: PowerProfiles
+    type: UserData

@@ -1,0 +1,13 @@
+set(DEPENDENT_MP_BIN2HEXpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR "c:/Program Files/Microchip/xc32/v6.00/bin/xc32-bin2hex.exe")
+set(DEPENDENT_DEPENDENT_TARGET_ELFpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR ${CMAKE_CURRENT_LIST_DIR}/../../../../out/pic32cmgc-cnano-rtc-periodic-vscode-harmony/default.elf)
+set(DEPENDENT_TARGET_DIRpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR ${CMAKE_CURRENT_LIST_DIR}/../../../../out/pic32cmgc-cnano-rtc-periodic-vscode-harmony)
+set(DEPENDENT_BYPRODUCTSpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}/${sourceFileNamepic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}.c)
+add_custom_command(
+    OUTPUT ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}/${sourceFileNamepic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}.c
+    COMMAND ${DEPENDENT_MP_BIN2HEXpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR} --image ${DEPENDENT_DEPENDENT_TARGET_ELFpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR} --image-generated-c ${sourceFileNamepic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}.c --image-generated-h ${sourceFileNamepic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}.h --image-copy-mode ${modepic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR} --image-offset ${addresspic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR} 
+    WORKING_DIRECTORY ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}
+    DEPENDS ${DEPENDENT_DEPENDENT_TARGET_ELFpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR})
+add_custom_target(
+    dependent_produced_source_artifactpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR 
+    DEPENDS ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}/${sourceFileNamepic32cmgc_cnano_rtc_periodic_vscode_harmony_default_ZQ7rvpKR}.c
+    )
